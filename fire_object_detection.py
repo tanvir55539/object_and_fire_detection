@@ -12,7 +12,7 @@ from pydrive.auth import GoogleAuth
 def nothing(x): #----
     pass #-----
 
-url = 'http://192.168.94.25/cam-hi.jpg'
+url = 'http://192.168.94.25/cam-hi.jpg' #use the ip address that you get
 # url = 'http://192.168.71.74/cam-hi.jpg'
 #im = Nonef
 # count = 0
@@ -20,7 +20,7 @@ url = 'http://192.168.94.25/cam-hi.jpg'
 gauth = GoogleAuth()
 gauth.LocalWebserverAuth()
 drive = GoogleDrive(gauth)
-folder = "1Z0jeH9tS40r3ykdo-yWBktN8RfUzInN3"
+folder = "1Z0jeH9tS40r3ykdo-yWBktN8RfUzInN3" # here use your google drive folder link
 
 def run1():
     cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)
